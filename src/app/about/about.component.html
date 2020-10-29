@@ -1,0 +1,13 @@
+<p>Enter a SSN into the app and it returns a first and last name.  If data is missing from this page, please execute "npm run server".</p>
+<h2>Sample data</h2>
+
+<div>
+  <mat-card *ngFor="let person of persons" style="margin-top:10px;">
+    <mat-card-content>
+      <p>
+        {{person.ssn}}<br>
+        {{person.firstname}} {{person.lastname}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
